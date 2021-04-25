@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nazzy Oven</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="#">Nazzy<span>Oven</span></a>
+
+            <img id="moblie-cta" class="mobile-menu" src="images/menu_black_24dp.svg" alt="Open navigation">
+
+            <nav>
+                <img id="moblie-close" class="mobile-menu-close" src="images/close_black_24dp.svg" alt="close menu">
+
+                <ul class="primary-nav">
+                    <li class="current"><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+
+                <ul class="secondary-nav">
+                    <li><a href="#">Photo Album</a></li>
+                    <li class="feedback"><a href="#">FeedBack</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="container">
+            <div class="left-col">
+                <p class="subhead"> It's Yummy &amp; Sweet</p>
+                <h1>Your favourite cake and treat plug</h1>
+
+                <div class="hero-cta">
+                    <a href="#" class="primary-cta">Other sevices</a>
+                    <a href="#" class="primary-cta2">
+                        <img src="images/photo_library_black_24dp.svg" alt="watch Album">Watch album
+                    </a>
+                    
+                </div>
+            </div>
+
+            <img src="images/Nazzy's cake.jpg" class="hero-image" alt="nice cake">
+        </div>
+    </section>
+
+    <section class="features-setion">
+        <div class="container">
+            <h3><span>Nazzy Confectionary</span> got you on your:</h3>
+            <ul class="features-list">
+                <li>White wedding cakes</li>
+                <li>Traditional wedding cakses</li>
+                <li>Small chops</li>
+                <li>Food Tray</li>
+                <li>Fruit basket</li>
+                <li>Catering services</li>
+            </ul>
+
+            <img src="images/young-woman-chef-cooking-cake-in-kitchen-TCWXW8.jpg" alt="chef baking cake">
+        </div>
+
+    </section>
+
+    <section class="testimonials-section">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="images/reduce_capacity_black_24dp.svg" alt="refer me">
+
+                    <blockquote>Hello, it will be nice to refer us to your friends, and it's gonna be one good thing that you won't regret. There is bonus for every successful referal</blockquote>
+                    <cite>- Nazzy</cite>
+                </li>
+
+                <li>
+                    <img src="images/shopping_cart_black_24dp.svg" alt="refer me">
+
+                    <blockquote>Be a part of those who testify the great work of Nazzy Confectionary. <br>patronize us today and be satisfied</blockquote>
+                    <cite>- Nazzy</cite>
+                </li>
+
+                <li>
+                    <img src="images/recommend_black_24dp.svg" alt="refer me">
+
+                    <blockquote>We say a big thank you for your support and patronage so far and urge you to keep supporting us as we do out best to satisfy you</blockquote>
+                    <cite>- Nazzy</cite>
+                </li>
+            </ul>
+        </div>
+
+    </section>
+
+    <section class="feedback-section">
+        <div class="container">
+            <div class="feedback-left">
+                <h2>Feedback</h2>
+
+                <form action="">
+                    <label for="email">Email</label>
+                    <input type="email" id="name" name="email" placeholder="your email">
+
+                    <label for="message">FeedBack</label>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Your feedback"></textarea>
+
+                    <input type="submit" class="send-feedback-cta" value="send feedback">
+                </form>
+            </div>
+
+            <div class="feedback-right">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31770.24330424601!2d7.0071743861022435!3d5.52534909358456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1042575e9ddcab83%3A0x2616623b7f84805a!2sAmakohia-Akwakuma%2C%20Owerri!5e0!3m2!1sen!2sng!4v1619296569510!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <script>
+
+        const mobileBtn = document.getElementById('moblie-cta')
+            nav = document.querySelector('nav')
+            mobileBtnExit = document.getElementById('moblie-close');
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+
+    </script>
+
+   
+</body>
+</html>
